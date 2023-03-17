@@ -63,5 +63,10 @@ namespace Bus_Reservation
             this.Hide();
             new CheckAgentDetails().Show();
         }
+
+        private void AdminPanel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

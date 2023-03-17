@@ -30,9 +30,22 @@ namespace Bus_Reservation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new AdminPanel().Show();
-
+            if (textBox1.Text == "admin")
+            {
+                if (textBox2.Text == "admin")
+                {
+                    this.Hide();
+                    new AdminPanel().Show();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Password~!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid Login~!");
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -22,5 +22,18 @@ namespace Bus_Reservation
             this.Hide();
             new AdminPanel().Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SearchAgent sa = new SearchAgent();
+            sa.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            SearchUser su = new SearchUser();
+            su.ShowDialog();
+        }
     }
 }

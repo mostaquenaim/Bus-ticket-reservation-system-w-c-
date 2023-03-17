@@ -29,9 +29,10 @@ namespace Bus_Reservation
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Search));
             this.button3 = new System.Windows.Forms.Button();
-            this.BtnSerchAgnt = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button3
@@ -39,7 +40,7 @@ namespace Bus_Reservation
             this.button3.BackColor = System.Drawing.Color.LightSkyBlue;
             this.button3.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.button3.Location = new System.Drawing.Point(12, 386);
+            this.button3.Location = new System.Drawing.Point(12, 538);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(102, 52);
             this.button3.TabIndex = 50;
@@ -47,33 +48,40 @@ namespace Bus_Reservation
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // BtnSerchAgnt
-            // 
-            this.BtnSerchAgnt.Location = new System.Drawing.Point(12, 115);
-            this.BtnSerchAgnt.Name = "BtnSerchAgnt";
-            this.BtnSerchAgnt.Size = new System.Drawing.Size(87, 49);
-            this.BtnSerchAgnt.TabIndex = 53;
-            this.BtnSerchAgnt.Text = "Search Agent";
-            this.BtnSerchAgnt.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 170);
+            this.button1.BackColor = System.Drawing.Color.Khaki;
+            this.button1.Location = new System.Drawing.Point(419, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 49);
-            this.button1.TabIndex = 54;
-            this.button1.Text = "Search User";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Size = new System.Drawing.Size(93, 40);
+            this.button1.TabIndex = 51;
+            this.button1.Text = "Agent ";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button4.Location = new System.Drawing.Point(518, 12);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(93, 40);
+            this.button4.TabIndex = 54;
+            this.button4.Text = "User";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1077, 602);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.BtnSerchAgnt);
             this.Controls.Add(this.button3);
             this.Name = "Search";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search";
             this.ResumeLayout(false);
 
@@ -82,7 +90,7 @@ namespace Bus_Reservation
         #endregion
 
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button BtnSerchAgnt;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button4;
     }
 }

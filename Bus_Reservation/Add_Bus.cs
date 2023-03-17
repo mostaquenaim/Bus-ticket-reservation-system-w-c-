@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Contents.Define;
+using Contents.Operation;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +23,33 @@ namespace Bus_Reservation
         {
             this.Hide();
             new Agent_Panel_Login().Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (txtBname.Text != "" && comboBusType.Text != "" && comboRoute.Text != "" && txtTotalBus.Text != "" && txtPrice.Text !="")
+            {
+                 DBus bus = new DBus();
+                bus.bname = txtBname.Text;
+                bus.btype = comboBusType.Text;
+                bus.route = comboRoute.Text;
+                bus.totalbus = txtTotalBus.Text;
+                bus.price = txtPrice.Text;
+                bus.cname = txtCname.Text;
+
+                 OBus ob = new OBus();
+                 int number = ob.addbus(bus);
+                 if (number > 0)
+                     {
+                         MessageBox.Show("Bus Added~!");
+                         new Agent_Panel_Login().Show();
+                         this.Hide();
+                     }
+                 else
+                     {
+                         MessageBox.Show("Error!");
+                     }
+            }
         }
     }
 }

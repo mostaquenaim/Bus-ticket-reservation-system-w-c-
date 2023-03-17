@@ -57,6 +57,12 @@
     <Compile Include="Add_Bus.Designer.cs">
       <DependentUpon>Add_Bus.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSchedule.Designer.cs">
+      <DependentUpon>UserSchedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminCheckSchedule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,11 +81,28 @@
     <Compile Include="AdminPanel.Designer.cs">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="AgentGeneralInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgentGeneralInfo.Designer.cs">
+      <DependentUpon>AgentGeneralInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Agent_Panel_Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Agent_Panel_Login.Designer.cs">
       <DependentUpon>Agent_Panel_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusInfo.Designer.cs">
+      <DependentUpon>BusInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusReservationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BusReservationDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Buy_Ticket.cs">
       <SubType>Form</SubType>
@@ -98,6 +121,12 @@
     </Compile>
     <Compile Include="CheckBusDetails.Designer.cs">
       <DependentUpon>CheckBusDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check_Details.Designer.cs">
+      <DependentUpon>Check_Details.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -131,6 +160,18 @@
     <Compile Include="SearchAgent.Designer.cs">
       <DependentUpon>SearchAgent.cs</DependentUpon>
     </Compile>
+    <Compile Include="SearchUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchUser.Designer.cs">
+      <DependentUpon>SearchUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeeAgentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeAgentDetails.Designer.cs">
+      <DependentUpon>SeeAgentDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Set_Schedule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,11 +196,26 @@
     <Compile Include="User_Login.Designer.cs">
       <DependentUpon>User_Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="View_Bus_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Bus_Details.Designer.cs">
+      <DependentUpon>View_Bus_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Reservation Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Reservation Info.Designer.cs">
+      <DependentUpon>View_Reservation Info.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddAgent.resx">
       <DependentUpon>AddAgent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add_Bus.resx">
       <DependentUpon>Add_Bus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSchedule.resx">
+      <DependentUpon>UserSchedule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminCheckSchedule.resx">
       <DependentUpon>AdminCheckSchedule.cs</DependentUpon>
@@ -170,8 +226,14 @@
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AgentGeneralInfo.resx">
+      <DependentUpon>AgentGeneralInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Agent_Panel_Login.resx">
       <DependentUpon>Agent_Panel_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusInfo.resx">
+      <DependentUpon>BusInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Buy_Ticket.resx">
       <DependentUpon>Buy_Ticket.cs</DependentUpon>
@@ -181,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CheckBusDetails.resx">
       <DependentUpon>CheckBusDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check_Details.resx">
+      <DependentUpon>Check_Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -204,6 +269,15 @@
     <EmbeddedResource Include="Search.resx">
       <DependentUpon>Search.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SearchAgent.resx">
+      <DependentUpon>SearchAgent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchUser.resx">
+      <DependentUpon>SearchUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeeAgentDetails.resx">
+      <DependentUpon>SeeAgentDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Set_Schedule.resx">
       <DependentUpon>Set_Schedule.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,6 +290,23 @@
     <EmbeddedResource Include="User_Login.resx">
       <DependentUpon>User_Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View_Bus_Details.resx">
+      <DependentUpon>View_Bus_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Reservation Info.resx">
+      <DependentUpon>View_Reservation Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BusReservationDataSet.xsc">
+      <DependentUpon>BusReservationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BusReservationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BusReservationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BusReservationDataSet.xss">
+      <DependentUpon>BusReservationDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -243,6 +334,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\20211209_215618_0000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buses 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Contents\Contents.csproj">
+      <Project>{a6e47669-1b3f-4ca1-8582-c3013973156e}</Project>
+      <Name>Contents</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

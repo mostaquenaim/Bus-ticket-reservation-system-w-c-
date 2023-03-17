@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Contents.Define;
+using Contents.Operation;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -31,8 +34,8 @@ namespace Bus_Reservation
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked) textBox2.UseSystemPasswordChar = false;
-            else textBox2.UseSystemPasswordChar = true;
+            if (checkBox1.Checked) txtPass.UseSystemPasswordChar = false;
+            else txtPass.UseSystemPasswordChar = true;
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -54,8 +57,23 @@ namespace Bus_Reservation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new User_Login().Show();
+            DUserRegister dr = new DUserRegister();
+            dr.email = txtEmail.Text;
+            dr.password = txtPass.Text;
+
+            OUserRegister ur = new OUserRegister();
+            SqlDataAdapter sql = ur.userLogin(dr);
+            DataTable dt = new DataTable();
+            sql.Fill(dt);
+            if (dt.Rows[0][0].ToString() == "1")
+            {
+                this.Hide();
+                new User_Login().Show();
+            }
+            else
+            {
+                MessageBox.Show("Invalid Username or Password~!");
+            }
         }
     }
 }
